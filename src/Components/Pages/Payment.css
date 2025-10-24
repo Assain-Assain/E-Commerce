@@ -1,0 +1,138 @@
+/* Base layout */
+.payment {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  font-family: 'Segoe UI', sans-serif;
+ 
+  text-align: center;
+  animation: fadeIn 1s ease-in;
+}
+
+/* Title and amount */
+.payment h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.payment p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+/* Payment options */
+.payment-options {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 25px;
+}
+
+.payment-options label {
+  cursor: pointer;
+  font-weight: 500;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  transition: background 0.3s ease;
+}
+
+.payment-options input {
+  margin-right: 8px;
+  
+}
+
+.payment-options label:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Buttons */
+button {
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 75, 43, 0.6);
+}
+
+/* Success message */
+.success-message {
+  animation: fadeInScale 1s ease forwards;
+  padding: 20px;
+}
+
+.success-message h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #00ffae;
+}
+
+.success-message p {
+  font-size: 1.1rem;
+}
+
+/* COD animation */
+.cod-animation {
+  animation: slideUp 1.5s ease forwards;
+  margin-top: 30px;
+  padding: 20px;
+  background: rgba(0, 255, 174, 0.1);
+  border: 1px solid #00ffae;
+  border-radius: 15px;
+}
+
+.cod-animation h2 {
+  font-size: 1.5rem;
+  color: #00ffae;
+}
+
+.cod-animation p {
+  font-size: 1rem;
+}
+
+/* Animations */
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
