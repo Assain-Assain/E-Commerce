@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className='nav-top mobile-only'>
         <div className='navlogo'>
           <img src={logo} alt='Shopper logo' />
-          <p>SHOPPERS</p>
+          <p>SHOPPER</p>
         </div>
 
         <div className='nav-actions'>
@@ -36,7 +36,7 @@ const Navbar = () => {
       {/* Desktop layout */}
       <div className='navlogo desktop-only'>
         <img src={logo} alt='Shopper logo' />
-        <p>SHOPPER</p>
+        <p>SHOPPERS</p>
       </div>
 
       <ul className='navmenu desktop-only'>
