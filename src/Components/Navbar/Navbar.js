@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className='nav-top mobile-only'>
         <div className='navlogo'>
           <img src={logo} alt='Shopper logo' />
-          <p>SHOPPER</p>
+          <p>SHOPPERS</p>
         </div>
 
         <div className='nav-actions'>
